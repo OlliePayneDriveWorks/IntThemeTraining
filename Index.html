@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Tab title -->
+    <title>My Integration Website</title>
+    <!-- Tab Icon  -->
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <!-- CSS styling for the site -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h1 class="header">This is my site</h1>
+      <img class="logo" src="icon.png" />
+    </nav>
+    <main>
+      <!-- Left hand side of the form (input fields) -->
+      <form>
+        <label>First name:</label>
+        <input type="text" name="firstname" />
+        <label>Last name:</label>
+        <input type="text" name="lastname" />
+        <label>Select an Item</label>
+        <select name="dropdown" id="dropdown">
+          <option>Option1</option>
+          <option>Option2</option>
+          <option>Option3</option>
+        </select>
+        <fieldset>
+          <input type="checkbox" name="checkbox" /><label>Check Me!</label>
+        </fieldset>
+      </form>
+      <!-- Right hand side of the page -->
+      <div>
+        <h2>Render a Spec here</h2>
+        <div id="specification-form"></div>
+      </div>
+    </main>
+    <!-- The Javascript file containing the code to use for this site -->
+    <script src="script.js"></script>
+  </body>
+</html>

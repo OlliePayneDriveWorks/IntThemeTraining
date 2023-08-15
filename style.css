@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(196, 196, 196) 10%,
+    rgb(221, 221, 221) 35%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  margin: -2em;
+  height: 12em;
+  background-color: rgb(21, 109, 160);
+}
+
+.logo {
+  max-height: 8em;
+}
+
+.header {
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 1fr;
+  margin: 3em 0em;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 3em;
+}
+
+input {
+  margin-bottom: 1em;
+}
+
+select {
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border-style: none;
+  margin-left: -1em;
+}
+
+input[type="button"] {
+  cursor: crosshair;
+  border-radius: 2em;
+  width: 10em;
+}
