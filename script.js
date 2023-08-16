@@ -1,8 +1,8 @@
 // this constant is where we can store DriveWorks settings to access use siteSettings.{name}
 const siteSettings = {
-  dwEndpoint: "http://wsm-tech-olip",
-  dwGroup: "Alias",
-  dwProject: "AllTheThings",
+  dwEndpoint: "",
+  dwGroup: "",
+  dwProject: "",
 };
 
 //Select the div to inset a spec into...
