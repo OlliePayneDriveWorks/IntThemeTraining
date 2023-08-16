@@ -11,14 +11,14 @@ const specForm = document.getElementById("specification-form");
 let dwAPI;
 
 //Inject the Integration theme JS into the webpage
-const injectClientLib = function () {
+function injectClientLib() {
   apiLink = document.createElement("script");
   apiLink.src =
     siteSettings.dwEndpoint + "/DriveWorksLiveIntegrationClient.min.js";
+  apiLink.onload = () => loadDriveWorks();
   document.body.appendChild(apiLink);
   console.log(`client loaded`);
-  loadDriveWorks();
-};
+}
 
 //function to connect to DriveWorks and load the form
 async function loadDriveWorks() {
@@ -35,5 +35,4 @@ async function loadDriveWorks() {
     console.log(err);
   }
 }
-
 injectClientLib();
